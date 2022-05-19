@@ -14,6 +14,13 @@
 		B90369D2282D2667009A46B5 /* AculaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369D1282D2667009A46B5 /* AculaTests.swift */; };
 		B90369DC282D2667009A46B5 /* AculaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369DB282D2667009A46B5 /* AculaUITests.swift */; };
 		B90369DE282D2667009A46B5 /* AculaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369DD282D2667009A46B5 /* AculaUITestsLaunchTests.swift */; };
+		B90369EB282D49E7009A46B5 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369EA282D49E7009A46B5 /* CircleImage.swift */; };
+		B90369EF282EA604009A46B5 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369EE282EA604009A46B5 /* Categoria.swift */; };
+		B90369F1282F3207009A46B5 /* LojasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90369F0282F3207009A46B5 /* LojasView.swift */; };
+		B9036A2A28303B33009A46B5 /* Loja.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9036A2928303B33009A46B5 /* Loja.swift */; };
+		B9036A2C28303FFC009A46B5 /* CardLojaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9036A2B28303FFC009A46B5 /* CardLojaView.swift */; };
+		B9036A2F28304E0C009A46B5 /* LojasFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9036A2E28304E0C009A46B5 /* LojasFactory.swift */; };
+		B9036A322835133D009A46B5 /* CadastroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9036A312835133D009A46B5 /* CadastroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		B90369D7282D2667009A46B5 /* AculaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AculaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90369DB282D2667009A46B5 /* AculaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AculaUITests.swift; sourceTree = "<group>"; };
 		B90369DD282D2667009A46B5 /* AculaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AculaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B90369EA282D49E7009A46B5 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		B90369EE282EA604009A46B5 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
+		B90369F0282F3207009A46B5 /* LojasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojasView.swift; sourceTree = "<group>"; };
+		B9036A2928303B33009A46B5 /* Loja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loja.swift; sourceTree = "<group>"; };
+		B9036A2B28303FFC009A46B5 /* CardLojaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLojaView.swift; sourceTree = "<group>"; };
+		B9036A2E28304E0C009A46B5 /* LojasFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojasFactory.swift; sourceTree = "<group>"; };
+		B9036A312835133D009A46B5 /* CadastroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +108,17 @@
 		B90369BF282D2666009A46B5 /* Acula */ = {
 			isa = PBXGroup;
 			children = (
+				B9036A2D28304DE5009A46B5 /* Factory */,
+				B9036A2828303876009A46B5 /* Model */,
 				B90369C0282D2666009A46B5 /* AculaApp.swift */,
-				B90369C2282D2666009A46B5 /* ContentView.swift */,
 				B90369C4282D2667009A46B5 /* Assets.xcassets */,
+				B90369C7282D2667009A46B5 /* Preview Assets.xcassets */,
+				B90369EA282D49E7009A46B5 /* CircleImage.swift */,
 				B90369C6282D2667009A46B5 /* Preview Content */,
+				B90369F0282F3207009A46B5 /* LojasView.swift */,
+				B90369C2282D2666009A46B5 /* ContentView.swift */,
+				B9036A312835133D009A46B5 /* CadastroView.swift */,
+				B9036A2B28303FFC009A46B5 /* CardLojaView.swift */,
 			);
 			path = Acula;
 			sourceTree = "<group>";
@@ -105,7 +126,6 @@
 		B90369C6282D2667009A46B5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B90369C7282D2667009A46B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -125,6 +145,23 @@
 				B90369DD282D2667009A46B5 /* AculaUITestsLaunchTests.swift */,
 			);
 			path = AculaUITests;
+			sourceTree = "<group>";
+		};
+		B9036A2828303876009A46B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B90369EE282EA604009A46B5 /* Categoria.swift */,
+				B9036A2928303B33009A46B5 /* Loja.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9036A2D28304DE5009A46B5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B9036A2E28304E0C009A46B5 /* LojasFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B90369C3282D2666009A46B5 /* ContentView.swift in Sources */,
+				B9036A2A28303B33009A46B5 /* Loja.swift in Sources */,
+				B90369EF282EA604009A46B5 /* Categoria.swift in Sources */,
+				B9036A2F28304E0C009A46B5 /* LojasFactory.swift in Sources */,
+				B9036A2C28303FFC009A46B5 /* CardLojaView.swift in Sources */,
 				B90369C1282D2666009A46B5 /* AculaApp.swift in Sources */,
+				B90369F1282F3207009A46B5 /* LojasView.swift in Sources */,
+				B90369EB282D49E7009A46B5 /* CircleImage.swift in Sources */,
+				B9036A322835133D009A46B5 /* CadastroView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
